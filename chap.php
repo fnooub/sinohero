@@ -25,7 +25,7 @@
 		preg_match('/\[chuong\](.*?)\[\/chuong\]/', $row, $chuong);
 		preg_match('#\[nd\](.*?)\[\/nd\]#is', $row, $nd2);
 		echo '<h1>' . $chuong[1] . '</h1>';
-		echo '<p>' . nl2p($nd2[1]) . '</p>';
+		echo '<p>' . nl2br($nd2[1]) . '</p>';
 	}
 
 	echo $paginate->create_links();		
