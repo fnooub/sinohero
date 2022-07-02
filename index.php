@@ -8,5 +8,5 @@
 
 	foreach ($data as $key => $value) {
 		preg_match('/\[chuong\](.*?)\[\/chuong\]/', $value, $chuong);
-		echo '<a href="' . base_url() . 'posts/chap/' . $id . '?c=' . ($key+1) . '"><h1>' . $chuong[1] . '</h1></a>';
+		echo '<a href="posts/chap/' . $id . '?c=' . ($key+1) . '"><h1>' . $chuong[1] . '</h1></a>';
 	}
